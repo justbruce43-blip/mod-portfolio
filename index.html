@@ -7,12 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style>
+        /* This prevents the "Flicker" of unstyled text */
+        [v-cloak] { display: none; }
         body { 
             background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
                         url('https://www.transparenttextures.com/patterns/carbon-fibre.png'), #0a0a0a;
             color: #f0f0f0; 
             font-family: 'VT323', monospace;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
         }
+        .loaded body { opacity: 1; }
         .mc-glass {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(12px);
@@ -23,25 +28,17 @@
             border-color: #3fff3f;
             box-shadow: 0 10px 30px rgba(63, 255, 63, 0.15);
         }
-        .exp-bar {
-            height: 14px;
-            background: #1a1a1a;
-            border: 2px solid #333;
-        }
+        .exp-bar { height: 14px; background: #1a1a1a; border: 2px solid #333; }
         .exp-fill {
             height: 100%;
             background: linear-gradient(90deg, #2ecc71, #3fff3f);
             box-shadow: 0 0 15px #3fff3f;
             width: 57%;
         }
-        .img-container {
-            height: 180px; 
-            overflow: hidden;
-            background: #000;
-        }
+        .img-container { height: 180px; overflow: hidden; background: #000; }
     </style>
 </head>
-<body class="tracking-wider">
+<body class="tracking-wider" onload="document.documentElement.classList.add('loaded')">
 
     <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-black/50 backdrop-blur-md">
         <h1 class="text-4xl font-bold text-white uppercase tracking-tighter">BRUCE <span class="text-green-500">B.</span></h1>
