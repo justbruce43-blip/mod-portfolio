@@ -21,8 +21,8 @@
         .exp-fill { height: 100%; background: linear-gradient(90deg, #2ecc71, #3fff3f); box-shadow: 0 0 15px #3fff3f; width: 57%; }
         .img-container { height: 180px; overflow: hidden; background: #000; }
         .mc-card-hover:hover { transform: translateY(-5px); border-color: #3fff3f; box-shadow: 0 0 20px rgba(63, 255, 63, 0.1); }
-        .btn-pmc { background: #3b82f6; color: white; transition: all 0.3s; }
-        .btn-pmc:hover { background: #2563eb; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
+        .crafting-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; background: #8b8b8b; padding: 4px; border: 2px solid #373737; }
+        .crafting-slot { width: 40px; height: 40px; background: #8b8b8b; border: 2px solid #373737; box-shadow: inset 2px 2px 0 #ffffff, inset -2px -2px 0 #555555; }
     </style>
 
     <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-black/50 backdrop-blur-md">
@@ -65,16 +65,22 @@
                 <div class="p-6">
                     <h4 class="text-2xl font-bold text-white mb-1 uppercase">1965 UNIVERSE</h4>
                     <p class="text-lg text-blue-400 mb-4 italic">"Historical Build"</p>
-                    <a href="https://www.planetminecraft.com/member/minecraftdude2024/" target="_blank" class="btn-pmc px-3 py-2 block text-center font-bold transition">PLANET MC</a>
+                    <a href="https://www.planetminecraft.com/member/minecraftdude2024/" target="_blank" class="bg-blue-600 text-white px-3 py-2 block text-center font-bold transition hover:bg-blue-500">PLANET MC</a>
                 </div>
             </div>
 
-            <div class="mc-glass rounded-xl overflow-hidden mc-card-hover transition-all duration-300">
-                <div class="img-container"><img src="assets/items.PNG" class="w-full h-full object-contain p-4 bg-zinc-900/50"></div>
+            <div class="mc-glass rounded-xl overflow-hidden mc-card-hover transition-all duration-300 border-purple-500/30 cursor-pointer" onclick="alert('RECIPE UNLOCKED: Lucille Bat Requires 1x Baseball Bat + 1x Barbed Wire + 2x Scrap')">
+                <div class="img-container p-4 flex items-center justify-center bg-purple-950/10">
+                    <div class="crafting-grid">
+                        <div class="crafting-slot"></div><div class="crafting-slot bg-zinc-700"></div><div class="crafting-slot"></div>
+                        <div class="crafting-slot"></div><div class="crafting-slot bg-amber-900"></div><div class="crafting-slot"></div>
+                        <div class="crafting-slot"></div><div class="crafting-slot bg-amber-900"></div><div class="crafting-slot"></div>
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h4 class="text-2xl font-bold text-white mb-1 uppercase">CUSTOM ASSETS</h4>
-                    <p class="text-lg text-purple-400 mb-4 italic">"3D Modeling"</p>
-                    <div class="text-zinc-500 text-center py-2 border border-zinc-800 text-xs font-bold uppercase tracking-widest">SURVIVAL PROP KIT</div>
+                    <h4 class="text-2xl font-bold text-white mb-1 uppercase">MOD ASSETS</h4>
+                    <p class="text-lg text-purple-400 mb-4 italic">"Interactive Recipes"</p>
+                    <div class="text-purple-300 text-center py-2 border border-purple-800 text-xs font-bold uppercase tracking-widest bg-purple-900/20">CLICK TO CRAFT</div>
                 </div>
             </div>
 
@@ -94,29 +100,23 @@
         <div class="mt-12 mc-glass rounded-xl overflow-hidden border-amber-900/40 p-10 bg-black/20">
             <h4 class="text-5xl font-bold text-amber-500 mb-8 uppercase tracking-tighter italic">// THE BENEFIELD LEGACY</h4>
             <div class="grid md:grid-cols-2 gap-12">
-                
                 <div class="flex flex-col lg:flex-row gap-6 items-start bg-white/5 p-6 rounded-lg border border-white/5">
                     <img src="assets/bruce-i-1940s.jpg" class="w-40 h-40 object-cover rounded shadow-lg border-2 border-amber-900/50">
                     <div>
                         <h5 class="text-3xl font-bold text-white uppercase">Bruce I</h5>
                         <p class="text-amber-400 text-xl italic mb-3">Founder & Mayor (1902-1962)</p>
-                        <p class="text-zinc-400 leading-snug text-xl">Established San Dingo in 1902. Lead the nation through the 1940s industrial steam era, laying the foundation for modern Immersive Nation.</p>
+                        <p class="text-zinc-400 leading-snug text-xl">Established San Dingo in 1902. Lead the nation through the 1940s industrial steam era.</p>
                     </div>
                 </div>
-
                 <div class="flex flex-col lg:flex-row gap-6 items-start bg-white/5 p-6 rounded-lg border border-white/5">
                     <img src="assets/bruce-ii-1965.jpg" class="w-40 h-40 object-cover rounded shadow-lg border-2 border-amber-900/50">
                     <div>
                         <h5 class="text-3xl font-bold text-white uppercase">Bruce II</h5>
                         <p class="text-amber-400 text-xl italic mb-3">The Architect (1965)</p>
-                        <p class="text-zinc-400 leading-snug text-xl">Current head of Immersive Nation. Responsible for the metropolitan skyline expansion and the 1965 Urban Infrastructure boom.</p>
+                        <p class="text-zinc-400 leading-snug text-xl">Current head of Immersive Nation. Responsible for the metropolitan skyline expansion.</p>
                     </div>
                 </div>
-
             </div>
-            <p class="mt-10 text-zinc-500 italic text-2xl border-t border-zinc-800 pt-6 text-center">
-                "A legacy of leadership and urban management from 1790 through the 20th century."
-            </p>
         </div>
     </section>
 
