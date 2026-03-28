@@ -3,95 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRUCE B. | IMMERSIVE NATION</title>
+    <title>BRUCE B. | IMMERSIVE NATION ARCHIVE</title>
 </head>
-<body style="background-color: #0a0a0a; color: #f0f0f0; margin: 0; opacity: 0; transition: opacity 0.4s;" onload="document.body.style.opacity='1'">
+<body style="background-color: #0d0d0d; color: #e0e0e0; margin: 0; opacity: 0; transition: opacity 0.5s;" onload="document.body.style.opacity='1'">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
     
     <style>
         body { 
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
-                        url('https://www.transparenttextures.com/patterns/carbon-fibre.png'), #0a0a0a;
-            font-family: 'VT323', monospace;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+            font-family: 'Space Grotesk', sans-serif;
         }
-        .mc-glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .exp-bar { height: 14px; background: #1a1a1a; border: 2px solid #333; }
-        .exp-fill { height: 100%; background: linear-gradient(90deg, #2ecc71, #3fff3f); box-shadow: 0 0 15px #3fff3f; width: 57%; }
-        .img-container { height: 180px; overflow: hidden; background: #000; }
-        .mc-card-hover:hover { transform: translateY(-5px); border-color: #3fff3f; box-shadow: 0 0 20px rgba(63, 255, 63, 0.1); }
+        .historical-font { font-family: 'VT323', monospace; }
+        .mc-border { border: 2px solid #333; transition: all 0.3s; }
+        .mc-border:hover { border-color: #fbbf24; box-shadow: 0 0 20px rgba(251, 191, 36, 0.2); }
     </style>
 
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-black/50 backdrop-blur-md">
-        <h1 class="text-4xl font-bold text-white uppercase tracking-tighter">BRUCE <span class="text-green-500">B.</span></h1>
-        <div class="space-x-8 text-2xl uppercase">
-            <a href="#missions" class="hover:text-green-400 transition">/Missions</a>
-            <a href="https://www.planetminecraft.com/member/minecraftdude2024/" target="_blank" class="hover:text-blue-400 transition">/PlanetMC</a>
+    <nav class="p-8 flex justify-between items-center max-w-6xl mx-auto uppercase tracking-widest">
+        <h1 class="text-3xl font-bold border-b-2 border-amber-500">IMMERSIVE <span class="text-amber-500">NATION</span></h1>
+        <div class="space-x-8 text-xl historical-font">
+            <a href="https://www.planetminecraft.com/member/minecraftdude2024/" target="_blank" class="hover:text-amber-500 transition">/ARCHIVES</a>
         </div>
     </nav>
 
-    <header class="py-20 text-center max-w-4xl mx-auto px-6">
-        <div class="inline-block px-4 py-1 bg-green-500/10 border border-green-500 text-green-500 text-xl mb-6 uppercase">LEVEL 24 ARCHITECT</div>
-        <h2 class="text-6xl md:text-8xl font-extrabold mb-4 leading-none uppercase">IMMERSE YOUR <span class="text-green-500 font-black">WORLD.</span></h2>
-        
-        <div class="max-w-sm mx-auto mb-8">
-            <div class="flex justify-between text-lg mb-1 text-green-400 uppercase">
-                <span>Modding XP</span>
-                <span>259 / 470</span>
-            </div>
-            <div class="exp-bar"><div class="exp-fill"></div></div>
-        </div>
-        <p class="text-3xl text-gray-400 italic">"Lead Developer & Environmental Artist specializing in survival narrative events."</p>
+    <header class="py-24 text-center max-w-5xl mx-auto px-6">
+        <div class="inline-block px-6 py-2 border border-amber-500 text-amber-500 text-sm tracking-[0.3em] mb-8 uppercase">1790 - 1965 History</div>
+        <h2 class="text-7xl md:text-9xl font-black mb-6 leading-none tracking-tighter uppercase">THE <span class="text-amber-500">BENEFIELD</span> LEGACY.</h2>
+        <p class="text-2xl text-zinc-500 historical-font uppercase tracking-widest">From Founder Bruce I to Architect Bruce II</p>
     </header>
 
-    <section id="missions" class="max-w-6xl mx-auto py-16 px-6">
-        <h3 class="text-4xl font-bold mb-12 text-zinc-500 uppercase tracking-tighter">// SECTOR MISSIONS</h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <div class="mc-glass rounded-xl overflow-hidden mc-card-hover transition-all duration-300">
-                <div class="img-container"><img src="assets/day-3-vs-day-7.jpg" class="w-full h-full object-cover"></div>
-                <div class="p-6">
-                    <h4 class="text-2xl font-bold text-white mb-1 uppercase">UNDEAD v2.0</h4>
-                    <p class="text-lg text-green-400 mb-4 italic">"Operation Cobalt"</p>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/immersive-nation-undead" target="_blank" class="text-white bg-green-600 px-3 py-2 block text-center hover:bg-green-500 font-bold transition">CURSEFORGE</a>
-                </div>
+    <section class="max-w-6xl mx-auto py-10 px-6">
+        
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-32">
+            <div class="w-full md:w-1/2">
+                <img src="assets/bruce-i-1902.jpg" class="w-full rounded shadow-2xl mc-border">
             </div>
-
-            <div class="mc-glass rounded-xl overflow-hidden mc-card-hover transition-all duration-300">
-                <div class="img-container"><img src="assets/1965-city.jpg" class="w-full h-full object-cover"></div>
-                <div class="p-6">
-                    <h4 class="text-2xl font-bold text-white mb-1 uppercase">1965 UNIVERSE</h4>
-                    <p class="text-lg text-blue-400 mb-4 italic">"Historical Build"</p>
-                    <a href="https://www.planetminecraft.com/member/minecraftdude2024/" target="_blank" class="text-white bg-blue-600 px-3 py-2 block text-center hover:bg-blue-500 font-bold transition">PLANET MC</a>
-                </div>
+            <div class="w-full md:w-1/2">
+                <h3 class="text-amber-500 text-xl historical-font mb-2 uppercase tracking-widest">// FOUNDED 1902</h3>
+                <h4 class="text-5xl font-bold mb-4 uppercase">BRUCE I: THE MAYOR (1940s)</h4>
+                <p class="text-xl text-zinc-400 leading-relaxed mb-6">
+                    After founding San Dingo in 1902, Bruce I oversaw the massive industrial boom of the 1940s. Shown here at the Rockport Pacific terminal during the height of the steam-powered era.
+                </p>
+                <span class="px-4 py-2 bg-zinc-900 text-zinc-500 text-sm uppercase font-bold">Industrial Era // 1902-1962</span>
             </div>
-
-            <div class="mc-glass rounded-xl overflow-hidden mc-card-hover transition-all duration-300">
-                <div class="img-container"><img src="assets/items.PNG" class="w-full h-full object-contain p-4 bg-zinc-900/50"></div>
-                <div class="p-6">
-                    <h4 class="text-2xl font-bold text-white mb-1 uppercase">CUSTOM ASSETS</h4>
-                    <p class="text-lg text-purple-400 mb-4 italic">"3D Modeling"</p>
-                    <div class="text-zinc-500 text-center py-2 border border-zinc-800 text-xs font-bold uppercase">Survival Prop Kit</div>
-                </div>
-            </div>
-
-            <div class="mc-glass rounded-xl overflow-hidden mc-card-hover transition-all duration-300 border-red-900/40">
-                <div class="img-container flex items-center justify-center bg-red-950/20">
-                    <span class="text-6xl text-red-600">▶</span>
-                </div>
-                <div class="p-6">
-                    <h4 class="text-2xl font-bold text-white mb-1 uppercase">SHOWCASE</h4>
-                    <p class="text-lg text-red-500 mb-4 italic">"Dev Gameplay"</p>
-                    <a href="https://youtu.be/LOPyJ2cluOE?si=8rJAKgz_wQXkqLYt" target="_blank" class="text-white bg-red-700 px-3 py-2 block text-center hover:bg-red-600 font-bold transition">WATCH</a>
-                </div>
-            </div>
-
         </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-32">
+            <div class="w-full md:w-1/2">
+                <img src="assets/bruce-ii-1965.jpg" class="w-full rounded shadow-2xl mc-border">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h3 class="text-blue-500 text-xl historical-font mb-2 uppercase tracking-widest">// CURRENT YEAR: 1965</h3>
+                <h4 class="text-5xl font-bold mb-4 uppercase">BRUCE II: THE ARCHITECT</h4>
+                <p class="text-xl text-zinc-400 leading-relaxed mb-6">
+                    Taking the mantle in 1962, Bruce II moved the nation into the modern era. As lead architect, he redesigned the skyline and established the New Haven Transit Authority (NHTA).
+                </p>
+                <span class="px-4 py-2 bg-blue-900/20 text-blue-400 text-sm uppercase font-bold">Modern Era // 1962-Present</span>
+            </div>
+        </div>
+
+        <hr class="border-zinc-800 mb-32">
+
+        <div class="grid md:grid-cols-2 gap-12 mb-32">
+            <div class="mc-border p-8 bg-zinc-900/30">
+                <h5 class="text-3xl font-bold mb-6 uppercase italic">Development <span class="text-red-600">Showcase</span></h5>
+                <div class="aspect-video bg-black mb-6 flex items-center justify-center border border-zinc-700">
+                    <span class="historical-font text-zinc-600">[YOUTUBE VIDEO PLAYER]</span>
+                </div>
+                <p class="text-zinc-500">Watch the environmental transitions and 1965 world-building in action.</p>
+            </div>
+            
+            <div class="mc-border p-8 bg-zinc-900/30">
+                <h5 class="text-3xl font-bold mb-6 uppercase italic">Legacy <span class="text-amber-500">Assets</span></h5>
+                <img src="assets/items.PNG" class="w-full h-48 object-cover mb-6 rounded grayscale hover:grayscale-0 transition duration-500">
+                <h6 class="text-xl font-bold uppercase mb-2">Lucille & Survival Kit</h6>
+                <p class="text-zinc-500">Custom 3D prop modeling for environmental storytelling and narrative events.</p>
+            </div>
+        </div>
+
     </section>
 
-    <footer class="py-20 text-center border-t border-zinc-900 text-zinc-700 text-xl uppercase tracking-widest">
-        DETROIT // 2026 // BRUCE B. CREATIVE
+    <footer class="py-20 text-center border-t border-zinc-900 text-zinc-600 text-sm uppercase tracking-[0.5em]">
+        Detroit // 2026 // Immersive Nation Official Archive
     </footer>
 
 </body>
